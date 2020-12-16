@@ -1,7 +1,7 @@
 # Tour-With-Us
-Flask Webapp using MYSQL database
+Flask Webapp using MYSQL database for Tourism Agency
 
-# Webpages for different functions:
+Webpages for different functions:
 1.View all packages: 
 ```
 http://localhost:5000/all_packages
