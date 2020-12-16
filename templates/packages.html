@@ -1,0 +1,21 @@
+<h1>ALL PACKAGES</h1>
+<table border =1>
+    <tr>
+      <td>Package ID</td>
+      <td>Package name</td>
+      <td>Number of days</td>
+      <td>Destination</td>
+      <td>Employee Incharge ID</td>
+      <td>Cost</td>
+    </tr>
+    {% for pack in package_details %}
+    <tr>
+      <td>{{pack[0]}}</td>
+      <td>{{pack[1]}}</td>
+      <td>{{pack[2]}}</td>
+      <td>{{pack[3]}}</td>
+      <td>{{pack[4]}}</td>
+      <td>{{pack[5]}}</td>
+    </tr>
+    {% endfor %}
+</table>

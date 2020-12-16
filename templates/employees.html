@@ -1,0 +1,17 @@
+<h1>ALL EMPLOYEES</h1>
+<table border =1>
+    <tr>
+      <td>Employee ID</td>
+      <td>Employee name</td>
+      <td>Department</td>
+      <td>Role</td>
+    </tr>
+    {% for employee in employee_details %}
+    <tr>
+      <td>{{employee[0]}}</td>
+      <td>{{employee[1]}}</td>
+      <td>{{employee[2]}}</td>
+      <td>{{employee[3]}}</td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,15 @@
+<h1>ALL ENQUIRIES</h1>
+<table border =1>
+    <tr>
+      <td>Enquiry ID</td>
+      <td>User ID</td>
+      <td>Employee ID</td>
+    </tr>
+    {% for enquiry in enquiry_details %}
+    <tr>
+      <td>{{enquiry[0]}}</td>
+      <td>{{enquiry[1]}}</td>
+      <td>{{enquiry[2]}}</td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,17 @@
+<h1>ALL USERS</h1>
+<table border =1>
+    <tr>
+      <td>User ID</td>
+      <td>Password</td>
+      <td>Mail ID</td>
+      <td>Phone number</td>
+    </tr>
+    {% for user in user_details %}
+    <tr>
+      <td>{{user[0]}}</td>
+      <td>{{user[1]}}</td>
+      <td>{{user[2]}}</td>
+      <td>{{user[3]}}</td>
+    </tr>
+    {% endfor %}
+</table>
