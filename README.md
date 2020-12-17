@@ -1,6 +1,9 @@
 # Tour-With-Us
 Flask Webapp using MYSQL database for Tourism Agency
 
+# Usage directions:
+Configure the parameters according to your local system and database in the db.yaml yaml file
+
 Webpages for different functions:
 
 1. View all packages: 
