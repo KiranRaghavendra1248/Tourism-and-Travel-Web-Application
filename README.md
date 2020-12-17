@@ -6,7 +6,7 @@ Configure the parameters according to your local system and database in the db.y
 
 Webpages for different functions:
 
-1. View all packages: 
+1. View and Remove packages: 
 ```
 http://localhost:5000/all_packages
 ```
@@ -16,40 +16,32 @@ http://localhost:5000/all_packages
 http://localhost:5000/add_pack
 ```
 
-3. Remove package: 
-```
-http://localhost:5000/rem_pack
-```
-
-4. View all users: 
+3. View all users: 
 ```
 http://localhost:5000/all_users
 ```
 
-5. View all bookings: 
+4. View all bookings: 
 ```
 http://localhost:5000/all_bookings
 ```
 
-6. View all enquiries: 
+5. View all enquiries: 
 ```
 http://localhost:5000/all_enquiries
 ```
 
-7. View all employees: 
+6. View and renove employees: 
 ```
 http://localhost:5000/all_employees
 ```
 
-8. Add employee: 
+7. Add employee: 
 ```
 http://localhost:5000/add_employee
 ```
-9. Remove employee: 
-```
-http://localhost:5000/rem_employee
-```
-10. Update package cost: 
+
+8. Update package cost: 
 ```
 http://localhost:5000/update_pack
 ```
