@@ -46,4 +46,7 @@ http://localhost:5000/add_employee
 ```
 http://localhost:5000/rem_employee
 ```
-
+10. Update package cost: 
+```
+http://localhost:5000/update_pack
+```
