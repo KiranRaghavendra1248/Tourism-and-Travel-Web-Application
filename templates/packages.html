@@ -1,4 +1,7 @@
 <h1>ALL PACKAGES</h1>
+<head>
+   <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
 <table border =1>
     <tr>
       <td>Package ID</td>
@@ -16,6 +19,14 @@
       <td>{{pack[3]}}</td>
       <td>{{pack[4]}}</td>
       <td>{{pack[5]}}</td>
+      <td>
+      <form method="POST" action="/rem_pack" onsubmit="return confirm('Are you sure you wanna delete??');">
+      <input type="hidden" value="{{pack[0]}}" name="p_id">
+      <button type="submit" class="btn btn-small" >
+      <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+      </button>
+      </form>
+      </td>
     </tr>
     {% endfor %}
 </table>

@@ -70,7 +70,6 @@ def remove_package():
         mysql.connection.commit()
         cur.close()
         return redirect('/all_packages')
-    return render_template('Remove_package.html')
 
 # Update package cost
 @app.route('/update_pack',methods=['GET','POST'])
@@ -156,7 +155,6 @@ def remove_employee():
         mysql.connection.commit()
         cur.close()
         return redirect('/all_employees')
-    return render_template('Remove_employee.html')
 
 # View all bookings
 @app.route('/all_bookings')
