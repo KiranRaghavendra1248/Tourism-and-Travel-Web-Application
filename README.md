@@ -2,7 +2,7 @@
 Flask Webapp using MYSQL database for Tourism Agency
 
 # Usage directions:
-Configure the parameters according to your local system and database in the db.yaml yaml file
+Configure the parameters according to your local system and database in the db.yaml file
 
 Webpages for different functions:
 
