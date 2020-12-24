@@ -57,7 +57,7 @@ def add_package():
     return render_template('Add_package.html')
 
 # Remove package
-@app.route('/rem_pack',methods=['GET','POST'])
+@app.route('/rem_pack',methods=['POST'])
 def remove_package():
     if request.method=='POST':
         # Fetch Form Data
