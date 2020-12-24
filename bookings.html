@@ -1,0 +1,25 @@
+<h1>ALL BOOKINGS</h1>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<table border =1 class="customers">
+    <tr>
+      <th>Booking ID</th>
+      <th>Booking date</th>
+      <th>Travel date</th>
+      <th>Price</th>
+      <th>Package ID</th>
+      <th>User ID</th>
+    </tr>
+    {% for booking in booking_details %}
+    <tr>
+      <td>{{booking[0]}}</td>
+      <td>{{booking[1]}}</td>
+      <td>{{booking[2]}}</td>
+      <td>{{booking[3]}}</td>
+      <td>{{booking[4]}}</td>
+      <td>{{booking[5]}}</td>
+    </tr>
+    {% endfor %}
+</table>
