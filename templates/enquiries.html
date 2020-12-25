@@ -1,9 +1,12 @@
 <h1>ALL ENQUIRIES</h1>
-<table border =1>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<table border =1 class="customers">
     <tr>
-      <td>Enquiry ID</td>
-      <td>User ID</td>
-      <td>Employee ID</td>
+      <th>Enquiry ID</th>
+      <th>User ID</th>
+      <th>Employee ID</th>
     </tr>
     {% for enquiry in enquiry_details %}
     <tr>
