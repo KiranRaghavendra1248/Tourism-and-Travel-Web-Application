@@ -11,6 +11,59 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <style>
+
+
+:root {
+  --primaryColor: #f09d51;/*setting variables syntax*/
+  --mainWhite: rgb(216, 154, 206);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*element wont get bigger*/
+}
+.body {
+    color: var(--mainBlack);
+    font-family: "Lato", sans-serif;
+    background-color: rgb(92, 59, 75);
+}
+
+.start{
+    /*margin-top: 3rem;   */
+    padding-top: 30px; 
+   
+}
+.card-body{
+	background:transparent;
+}
+.col:first-child{
+    /*background: rgb(240, 194, 147);*/
+    /*background: #d4b4a8;*/
+    background: #a3bcb6;
+
+}
+
+.col, .row, .col-sm-3, .clas {
+  /*background: rgb(92, 59, 75);*/
+  background: #f3f3f3a7;
+}
+.clas{
+  padding-bottom: 200px;
+}
+.navbar:first-child{
+    /*background: rgb(153, 109, 131);*/
+    background: #045e93;
+}
+.navbar-collapse{
+	background: transparent;
+	height: 10px;
+}
+      </style>
     </head>
 <body>
 
@@ -36,7 +89,7 @@
 
             <ul class="nav navbar-nav navbar-right">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="http://localhost:5000/home">Home <span class="sr-only">(current)</span></a>
               </li>
             </ul>
         </nav>
