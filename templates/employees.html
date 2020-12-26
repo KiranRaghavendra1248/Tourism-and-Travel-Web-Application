@@ -1,7 +1,7 @@
 <h1>ALL EMPLOYEES</h1>
 <head>
    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-   <link rel="stylesheet" href="./styles.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
 </head>
 <table border =1 class="customers">
     <tr>
@@ -29,7 +29,7 @@
 </table>
 
 
-<a href="Add_employee.html">
+<a href="http://localhost:5000/add_employee">
   <button class="button button1" 
   style="	margin-left: 40%; margin-right: 30%;">Add Employee
   </button>
