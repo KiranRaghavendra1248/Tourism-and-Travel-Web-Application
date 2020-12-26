@@ -1,7 +1,7 @@
-<h1>ALL EMPLOYEES</h1>
+<h1 class="headings" style="text-align: center; background-color: #fcf8e3; border-radius:30px; padding: 20px; ">ALL EMPLOYEES</h1>
 <head>
    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
 </head>
 <table border =1 class="customers">
     <tr>
@@ -28,7 +28,7 @@
     {% endfor %}
 </table>
 
-
+<br>
 <a href="http://localhost:5000/add_employee">
   <button class="button button1" 
   style="	margin-left: 40%; margin-right: 30%;">Add Employee
