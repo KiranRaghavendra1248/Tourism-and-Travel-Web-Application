@@ -1,12 +1,16 @@
 <h1>ALL BOOKINGS</h1>
-<table border =1>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<table border =1 class="customers">
     <tr>
-      <td>Booking ID</td>
-      <td>Booking date</td>
-      <td>Travel date</td>
-      <td>Price</td>
-      <td>Package ID</td>
-      <td>User ID</td>
+      <th>Booking ID</th>
+      <th>Booking date</th>
+      <th>Travel date</th>
+      <th>Price</th>
+      <th>Package ID</th>
+      <th>User ID</th>
     </tr>
     {% for booking in booking_details %}
     <tr>

@@ -30,6 +30,10 @@ mysql= MySQL(app)
 #     10. Update package cost: http://localhost:5000/update_pack
 
 
+# Homepage
+@app.route('/home',methods=['GET','POST'])
+def render_home():
+    return render_template('homepage.html')
 
 
 # Add package

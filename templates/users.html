@@ -1,10 +1,13 @@
 <h1>ALL USERS</h1>
-<table border =1>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<table border =1 class="customers">
     <tr>
-      <td>User ID</td>
-      <td>Password</td>
-      <td>Mail ID</td>
-      <td>Phone number</td>
+      <th>User ID</th>
+      <th>Password</th>
+      <th>Mail ID</th>
+      <th>Phone number</th>
     </tr>
     {% for user in user_details %}
     <tr>

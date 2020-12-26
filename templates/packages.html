@@ -1,15 +1,16 @@
 <h1>ALL PACKAGES</h1>
 <head>
+    <link rel="stylesheet" href="./styles.css">
    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
-<table border =1>
+<table border =1 class="customers">
     <tr>
-      <td>Package ID</td>
-      <td>Package name</td>
-      <td>Number of days</td>
-      <td>Destination</td>
-      <td>Employee Incharge ID</td>
-      <td>Cost</td>
+      <th>Package ID</th>
+      <th>Package name</th>
+      <th>Number of days</th>
+      <th>Destination</th>
+      <th>Employee Incharge ID</th>
+      <th>Cost</th>
     </tr>
     {% for pack in package_details %}
     <tr>
@@ -30,3 +31,6 @@
     </tr>
     {% endfor %}
 </table>
+<a href="http://localhost:5000/add_pack"><button class="button button1">Add Package</button></a>
+<a href="http://localhost:5000/update_pack"><button class="button button2">Update Package</button></a>
+
