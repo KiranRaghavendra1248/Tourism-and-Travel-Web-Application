@@ -1,6 +1,31 @@
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");  
-  .customers {
+/*homepage styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*element wont get bigger*/
+}
+.body {
+    color: var(--mainBlack);
+    font-family: "Lato", sans-serif;
+    background-color: rgb(92, 59, 75);
+}
+.clas {
+    background: rgb(92, 59, 75);
+  }
+.start{
+    margin-top: 3rem;    
+}
+.col:first-child{
+    background: rgb(240, 194, 147);
+}
+.navbar:first-child{
+    background: rgb(153, 109, 131);
+}
+/*homepage styling ends*/
+
+.customers {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
