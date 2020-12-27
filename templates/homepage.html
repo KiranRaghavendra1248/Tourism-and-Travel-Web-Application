@@ -30,7 +30,7 @@
 .body {
     color: var(--mainBlack);
     font-family: "Lato", sans-serif;
-    background-color: rgb(92, 59, 75);
+
 }
 
 .start{
@@ -39,106 +39,127 @@
    
 }
 .card-body{
-	background:transparent;
+  background:transparent;
+  color: #ececec;
 }
 .col:first-child{
     /*background: rgb(240, 194, 147);*/
     /*background: #d4b4a8;*/
-    background: #a3bcb6;
-
+    /*background: #e44c65; pink*/ 
+    background: #4b3842;
 }
 
 .col, .row, .col-sm-3, .clas {
   /*background: rgb(92, 59, 75);*/
-  background: #f3f3f3a7;
+  /*background: #f3f3f3a7;*/
+  /*background: #222;*/
+  
 }
 .clas{
   padding-bottom: 200px;
+  background-image: url("bg3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .navbar:first-child{
     /*background: rgb(153, 109, 131);*/
-    background: #045e93;
+    /*background: #045e93;*/
+    background: #222;
 }
-.navbar-collapse{
-	background: transparent;
-	height: 10px;
-}
-      </style>
+
+
+   </style>
     </head>
 <body>
 
-        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark static-top">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <a class="navbar-brand" href="#">TourWithUs</a>
             <!--
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="http://localhost:5000/all_packages">Packages <span class="sr-only">(current)</span></a>
                 </li>
               </ul>
-            -->
-            <!--
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>-->
-          </div>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_enquiries">Enquiries <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_bookings">Bookings <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_employees">Employees <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_users">Users <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+          </div>-->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://localhost:5000/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-              <li class="nav-item active">
-                <a class="nav-link" href="http://localhost:5000/home">Home <span class="sr-only">(current)</span></a>
-              </li>
-            </ul>
         </nav>
+
     <div class="clas">
         <div class="start row mb-3 d-flex justify-content-center">
-          <div class="col-sm-3 mb-3">
+          <div class="col-lg-3 mb-3">
             <div class="card text-center rounded-circle col">
               <div class="card-body">
                 <h5 class="card-title">Packages</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="http://localhost:5000/all_packages" class="btn btn-outline-dark">Show Table</a>
+                <a href="http://localhost:5000/all_packages" class="btn btn-outline-light">Show Table</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-3">
+          <div class="col-lg-3 mb-3">
             <div class="card text-center rounded-circle col">
               <div class="card-body">
                 <h5 class="card-title">Employees</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="http://localhost:5000/all_employees" class="btn btn-outline-dark">Show Table</a>
+                <a href="http://localhost:5000/all_employees" class="btn btn-outline-light">Show Table</a>
               </div>
             </div>
           </div>
         </div>
         <div class="row mb-3 d-flex justify-content-center col" >
-          <div class="col-sm-3 mb-3">
+          <div class="col-lg-3 mb-3">
             <div class="card text-center rounded-circle col">
               <div class="card-body">
                 <h5 class="card-title">Bookings</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="http://localhost:5000/all_bookings" class="btn btn-outline-dark">Show Table</a>
+                <a href="http://localhost:5000/all_bookings" class="btn btn-outline-light">Show Table</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-lg-3 mb-3">
             <div class="card text-center rounded-circle col">
               <div class="card-body">
                 <h5 class="card-title">Users</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="http://localhost:5000/all_users" class="btn btn-outline-dark">Show Table</a>
+                <a href="http://localhost:5000/all_users" class="btn btn-outline-light">Show Table</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-3">
+          <div class="col-lg-3 mb-3">
             <div class="card text-center rounded-circle col">
               <div class="card-body">
                 <h5 class="card-title">Enquiries</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="http://localhost:5000/all_enquiries" class="btn btn-outline-dark">Show Table</a>
+                <a href="http://localhost:5000/all_enquiries" class="btn btn-outline-light">Show Table</a>
               </div>
             </div>
           </div>
