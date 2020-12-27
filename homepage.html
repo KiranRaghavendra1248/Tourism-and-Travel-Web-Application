@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Tour Management</title>
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <style>
+
+
+:root {
+  --primaryColor: #f09d51;/*setting variables syntax*/
+  --mainWhite: rgb(216, 154, 206);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*element wont get bigger*/
+}
+.body {
+    color: var(--mainBlack);
+    font-family: "Lato", sans-serif;
+
+}
+
+.start{
+    /*margin-top: 3rem;   */
+    padding-top: 30px; 
+   
+}
+.card-body{
+  background:transparent;
+  color: #ececec;
+}
+.col:first-child{
+    /*background: rgb(240, 194, 147);*/
+    /*background: #d4b4a8;*/
+    /*background: #e44c65; pink*/ 
+    background: #4b3842;
+}
+
+.col, .row, .col-sm-3, .clas {
+  /*background: rgb(92, 59, 75);*/
+  /*background: #f3f3f3a7;*/
+  /*background: #222;*/
+  
+}
+.clas{
+  padding-bottom: 200px;
+  background-image: url("bg3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.navbar:first-child{
+    /*background: rgb(153, 109, 131);*/
+    /*background: #045e93;*/
+    background: #222;
+}
+
+
+   </style>
+    </head>
+<body>
+
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark static-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <a class="navbar-brand" href="#">TourWithUs</a>
+            <!--
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_packages">Packages <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_enquiries">Enquiries <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_bookings">Bookings <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_employees">Employees <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost:5000/all_users">Users <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+          </div>-->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://localhost:5000/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+
+        </nav>
+
+    <div class="clas">
+        <div class="start row mb-3 d-flex justify-content-center">
+          <div class="col-lg-3 mb-3">
+            <div class="card text-center rounded-circle col">
+              <div class="card-body">
+                <h5 class="card-title">Packages</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="http://localhost:5000/all_packages" class="btn btn-outline-light">Show Table</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <div class="card text-center rounded-circle col">
+              <div class="card-body">
+                <h5 class="card-title">Employees</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="http://localhost:5000/all_employees" class="btn btn-outline-light">Show Table</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 d-flex justify-content-center col" >
+          <div class="col-lg-3 mb-3">
+            <div class="card text-center rounded-circle col">
+              <div class="card-body">
+                <h5 class="card-title">Bookings</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="http://localhost:5000/all_bookings" class="btn btn-outline-light">Show Table</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <div class="card text-center rounded-circle col">
+              <div class="card-body">
+                <h5 class="card-title">Users</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="http://localhost:5000/all_users" class="btn btn-outline-light">Show Table</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <div class="card text-center rounded-circle col">
+              <div class="card-body">
+                <h5 class="card-title">Enquiries</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="http://localhost:5000/all_enquiries" class="btn btn-outline-light">Show Table</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
