@@ -32,7 +32,7 @@
 	color: #ececec;
   }
   .col:first-child{
-	  background: #222;
+	  /*background: #222;*/
 	  opacity: 0.8;
 	  
   }
@@ -47,7 +47,7 @@
 	  opacity: 0.8;
   }
   .bg{
-	background-image: url("img/bg2.jpg");
+	background-image: url({{ url_for('static', filename = '/img/bg2.jpg')}});
 	background-repeat: no-repeat;
 	background-size:cover;
   }
@@ -64,7 +64,7 @@
 /*table styling*/
 .headings{
 	text-align: center; 
-	background-color: #fcf8e3; 
+	/*background-color: #fcf8e3;*/ 
 	border-radius:30px; 
 	padding: 20px; 
 }
@@ -120,7 +120,7 @@
 	
 	div {
 	  border-radius: 5px;
-	  background-color: #fcf8e3;
+	  /*background-color: #fcf8e3;*/
 	  padding: 20px 40px;
   }
 /*form styling ends*/
@@ -162,8 +162,8 @@
     margin-bottom: 0;
   }
   .bg{
-	background-image: url("img/bg2.jpg");
+	background-image: url({{ url_for('static', filename = '/img/bg2.jpg')}});
 	background-repeat: no-repeat;
-	background-size:cover;
+	background-size: cover;
   }
   /*table page styling ends*/
