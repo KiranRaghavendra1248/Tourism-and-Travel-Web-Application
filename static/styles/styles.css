@@ -64,7 +64,6 @@
 /*table styling*/
 .headings{
 	text-align: center; 
-	/*background-color: #fcf8e3;*/ 
 	border-radius:30px; 
 	padding: 20px; 
 }
@@ -117,12 +116,7 @@
 	input[type=submit]:hover {
 	  background-color: #45a049;
 	}
-	
-	div {
-	  border-radius: 5px;
-	  /*background-color: #fcf8e3;*/
-	  padding: 20px 40px;
-  }
+
 /*form styling ends*/
 /*add button*/
   .button {
