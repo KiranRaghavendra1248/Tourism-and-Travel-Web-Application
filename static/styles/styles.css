@@ -124,6 +124,7 @@
 	  background-color: #fcf8e3;
 	  padding: 20px 40px;
   }
+/*form styling ends*/
 /*add button*/
   .button {
 	background-color: rgb(92, 59, 75); /* Green */
@@ -149,3 +150,21 @@
   .button2:hover{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
+  /*add button ends*/
+
+  /* table pages*/
+    .container-fluid:first-child{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .nav2:first-child{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .bg{
+	background-image: url("bg2.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+  }
+  /*table page styling ends*/
