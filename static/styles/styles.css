@@ -32,10 +32,6 @@
 	color: #ececec;
   }
   .col:first-child{
-	  /*background: rgb(240, 194, 147);*/
-	  /*background: #d4b4a8;*/
-	  /*background: #e44c65; pink */
-	  /*background: #312d2e;*/
 	  background: #222;
 	  opacity: 0.8;
 	  
@@ -51,7 +47,7 @@
 	  opacity: 0.8;
   }
   .bg{
-	background-image: url("bg2.jpg");
+	background-image: url("img/bg2.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
   }
@@ -127,7 +123,7 @@
 /*form styling ends*/
 /*add button*/
   .button {
-	background-color: rgb(92, 59, 75); /* Green */
+	background-color: rgb(92, 59, 75);
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -153,7 +149,7 @@
   /*add button ends*/
 
   /* table pages*/
-    .container-fluid:first-child{
+  .container-fluid:first-child{
     font-size: 20px;
     line-height: 1.5;
   }
@@ -163,7 +159,7 @@
     margin-bottom: 0;
   }
   .bg{
-	background-image: url("bg2.jpg");
+	background-image: url("img/bg2.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
   }
