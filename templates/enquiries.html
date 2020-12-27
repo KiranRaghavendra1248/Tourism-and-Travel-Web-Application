@@ -1,18 +1,61 @@
 <head>
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<h1 class="headings">ALL ENQUIRIES</h1>
-<table border =1 class="customers">
-    <tr>
-      <th>Enquiry ID</th>
-      <th>User ID</th>
-      <th>Employee ID</th>
-    </tr>
-    {% for enquiry in enquiry_details %}
-    <tr>
-      <td>{{enquiry[0]}}</td>
-      <td>{{enquiry[1]}}</td>
-      <td>{{enquiry[2]}}</td>
-    </tr>
-    {% endfor %}
-</table>
+<body>
+  <div class="bg">
+    <div class="container-fluid">
+      <div class="row min-vh-100 flex-column flex-md-row">
+          <aside class="col-12 col-md-2 p-0 bg-dark flex-shrink-1">
+              <nav class="navbar nav2 navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start py-2">
+                  <div class="collapse navbar-collapse ">
+                      <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                          <li class="nav-item active">
+                              <a class="nav-link pl-0 text-nowrap" href="#"><i class="fa fa-bullseye fa-fw"></i> <span class="font-weight-bold">TourWithUs</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link pl-0" href="#"><i class="fa fa-book fa-fw"></i> <span class="d-none d-md-inline">Home</span></a>
+                        </li>                        
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href=http://localhost:5000/all_packages"><i class="fa fa-book fa-fw"></i> <span class="d-none d-md-inline">Packages</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="http://localhost:5000/all_employees"><i class="fa fa-cog fa-fw"></i> <span class="d-none d-md-inline">Employees</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="http://localhost:5000/all_bookings"><i class="fa fa-heart codeply fa-fw"></i> <span class="d-none d-md-inline">Bookings</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="http://localhost:5000/all_users"><i class="fa fa-star codeply fa-fw"></i> <span class="d-none d-md-inline">Users</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="http://localhost:5000/all_enquiries"><i class="fa fa-star fa-fw"></i> <span class="d-none d-md-inline">Enquiries</span></a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </aside>
+          <main class="col bg-faded py-3 flex-grow-1">
+            <h1 class="headings">ALL ENQUIRIES</h1>
+            <table border =1 class="customers">
+                <tr>
+                  <th>Enquiry ID</th>
+                  <th>User ID</th>
+                  <th>Employee ID</th>
+                </tr>
+                {% for enquiry in enquiry_details %}
+                <tr>
+                  <td>{{enquiry[0]}}</td>
+                  <td>{{enquiry[1]}}</td>
+                  <td>{{enquiry[2]}}</td>
+                </tr>
+                {% endfor %}
+              </table>
+          </main>
+      </div>
+    </div>
+  </div>
+</body>
