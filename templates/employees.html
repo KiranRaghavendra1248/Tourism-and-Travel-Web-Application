@@ -80,7 +80,8 @@
     }
   
     .customers tr:nth-child(even){background-color: #f2f2f2;}
-  
+    .customers tr:nth-child(odd){background-color: #f2f2f2;}
+
     .customers tr:hover {background-color: #ddd;}
   
     .customers th {
@@ -114,13 +115,9 @@
       .button2:hover{
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
       }
+
       .bg{
-        background-image: url("img/bg2.jpg");
-        background-repeat: no-repeat;
-        background-size:cover;
-      }
-      .bg{
-        background-image: url("img/bg2.jpg");
+        background-image: url({{ url_for('static', filename = '/img/bg2.jpg')}});
         background-repeat: no-repeat;
         background-size:cover;
       }
@@ -135,10 +132,10 @@
                 <div class="collapse navbar-collapse ">
                     <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                         <li class="nav-item active">
-                            <a class="nav-link pl-0 text-nowrap glow" href="#"> <span class="font-weight-bold">TourWithUs</span></a>
+                            <a class="nav-link pl-0 text-nowrap glow" href="http://localhost:5000/aboutus"> <span class="font-weight-bold">TourWithUs</span></a>
                         </li>
                         <li class="nav-item active">
-                          <a class="nav-link" href="#"> <span class="d-none d-md-inline">Home</span></a>
+                          <a class="nav-link" href="http://localhost:5000/home"> <span class="d-none d-md-inline">Home</span></a>
                       </li>                        
                         <li class="nav-item active">
                             <a class="nav-link " href="http://localhost:5000/all_packages"> <span class="d-none d-md-inline">Packages</span></a>

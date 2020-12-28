@@ -29,12 +29,15 @@ mysql= MySQL(app)
 #     9.Remove employee: http://localhost:5000/rem_employee
 #     10. Update package cost: http://localhost:5000/update_pack
 
+# About us
+@app.route('/aboutus',methods=['GET','POST'])
+def render_about():
+    return render_template('aboutus.html')
 
 # Homepage
 @app.route('/home',methods=['GET','POST'])
 def render_home():
     return render_template('homepage.html')
-
 
 # Add package
 @app.route('/add_pack',methods=['GET','POST'])

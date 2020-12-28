@@ -79,7 +79,8 @@
     padding: 8px;
   }
 
-  .customers tr:nth-child(even){background-color: #f2f2f2;}
+    .customers tr:nth-child(even){background-color: #f2f2f2;}
+    .customers tr:nth-child(odd){background-color: #f2f2f2;}
 
   .customers tr:hover {background-color: #ddd;}
 
@@ -87,15 +88,23 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    
+    background-color:rgb(92, 59, 75);
     color: white;
   }
 
 /*form*/
+.temp1{
+    margin-left: 35%;
+    font-size:150%;
+    font-weight:bold;
+}
+.label{
+    font-size:150%;
+}
 	input[type=text], select {
 	  width:600px;
 	  padding: 12px 20px;
-	  margin: 8px 0;
+	  margin: 8px 0px;
 	  display: inline-block;
 	  border: 1px solid #ccc;
 	  border-radius: 4px;
@@ -120,7 +129,7 @@
 /*form styling ends*/
 /*add button*/
   .button {
-	
+	background-color:rgb(92, 59, 75);
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -156,8 +165,8 @@
     margin-bottom: 0;
   }
   .bg{
-	background-image: url({{ url_for('static', filename = '/img/bg2.jpg')}});
-	background-repeat: no-repeat;
-	background-size: cover;
-  }
+        background-image: url({{ url_for('static', filename = 'img/bg2.jpg')}});
+        background-repeat: no-repeat;
+        background-size:cover;
+      }
   /*table page styling ends*/
